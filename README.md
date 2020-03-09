@@ -20,3 +20,7 @@
 Eres libre y tienes derecho de hacer todo lo que quieres.
 
 #### Pantallas
+
+Formulario de contacto
+
+![Formulario de contacto](screenshots/contact_form.png "Formulario de contacto")
