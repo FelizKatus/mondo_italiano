@@ -12,6 +12,9 @@
 
 #### De la caja
 
+* Formulario de contacto
+* Verificación de formularios
+
 #### Licensia
 
 Eres libre y tienes derecho de hacer todo lo que quieres.
