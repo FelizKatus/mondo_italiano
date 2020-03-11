@@ -6,7 +6,7 @@ require 'sqlite3'
 require 'sinatra/activerecord'
 require 'pony'
 
-set :database, "sqlite3:db.sqlite"
+set :database, "sqlite3:db.sqlite3"
 
 configure do
 end
