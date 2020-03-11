@@ -8,6 +8,9 @@ require 'pony'
 
 set :database, "sqlite3:db.sqlite3"
 
+class Product < ActiveRecord::Base
+end
+
 configure do
 end
 
