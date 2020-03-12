@@ -23,8 +23,11 @@ Eres libre y tienes derecho de hacer todo lo que quieres =)
 
 #### Pantallas:
 
-Página de inicio ->
-![Página de inicio](screenshots/home_page.png "Página de inicio")
+Lista de productos ->
+![Lista de productos](screenshots/product_list.png "Lista de productos")
+
+Página del producto ->
+![Página del producto](screenshots/product_page.png "Página del producto")
 
 Formulario de contacto ->
 ![Formulario de contacto](screenshots/contact_form.png "Formulario de contacto")
