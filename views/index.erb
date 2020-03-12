@@ -9,7 +9,8 @@
           <div class="progress-bar" role="progressbar" style="<% case p.size when 30 %><%= 'width: 33%;' %>
                                                                 <% when 45 %><%= 'width: 66%;' %>
                                                                 <% when 50 %><%= 'width: 100%;' %>
-                                                              <% end %>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                              <% end %>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          </div>
         </div>
         <div class="card-body">
           <h5 class="card-title">
@@ -38,8 +39,8 @@
           <hr>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <a href="/product/<%= p.id %>" class="btn btn-sm btn-outline-secondary">View</a>
-              <a href="#" class="btn btn-sm btn-outline-secondary">Buy</a>
+              <a href="/product/<%= p.id %>" class="btn btn-sm btn-outline-secondary">View more</a>
+              <button type="button" class="btn btn-sm btn-outline-secondary" onClick="add_to_cart()">Add to Cart</button>
             </div>
             <small class="text-muted">ID: <%= p.id %></small>
           </div>
