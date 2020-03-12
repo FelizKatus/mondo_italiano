@@ -15,11 +15,17 @@ configure do
 end
 
 before do
+  @products = Product.all
 end
 
 get '/' do
-  @products = Product.all
   erb :index
+end
+
+get '/product/:id' do
+  @product = Product.find(params[:id])
+
+  erb :product
 end
 
 get '/about' do

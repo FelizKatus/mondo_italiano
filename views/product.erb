@@ -1,0 +1,38 @@
+<div class="row">
+
+  <div class="col-md-8">
+
+    <img src="<%= @product.path_to_image %>" class="img-fluid" alt="Responsive image">
+  
+  </div>
+  <div class="col-md-4">
+
+    <h1><%= @product.title %></h1>
+
+    <p class="lead">
+      <%= @product.description %>
+    </p>
+    <p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" <%= @product.is_spicy ? 'checked' : ''%> disabled>
+        <label class="form-check-label" for="inlineCheckbox1">Spicy</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" <%= @product.is_veg ? 'checked' : ''%> disabled>
+        <label class="form-check-label" for="inlineCheckbox2">Veg</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" <%= @product.is_offer ? 'checked' : ''%> disabled>
+        <label class="form-check-label" for="inlineCheckbox3">Offer</label>
+      </div>
+    </p>
+    <p class="lead">
+      <span class="badge badge-primary">$<%= @product.price %></span>
+    </p>
+    <hr>
+    <p>
+      <a href="#" class="btn btn-sm btn-outline-secondary">Buy</a>
+    </p>
+
+  </div>
+</div><!-- /row -->
