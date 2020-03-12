@@ -14,6 +14,7 @@ es una tienda web para pizzeria simple de usar, ligera, rápida y libre que est�
 
 * Lista de productos
 * Página personal del producto
+* Cesta de compras
 * Formulario de contacto
 * Verificación de formularios
 
