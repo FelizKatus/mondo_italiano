@@ -6,6 +6,8 @@ function add_to_cart(id) {
   let p = localStorage.getItem(key)
   p = p * 1 + 1 // One click add one product to cart
   localStorage.setItem(key, p)
+
+  alert('Items in your cart: ' + get_items_quantity())
 }
 
 function get_items_quantity() {
