@@ -11,7 +11,7 @@ function add_to_cart(id) {
   p = p * 1 + 1 // One click add one product to cart
   localStorage.setItem(key, p)
 
-  alert('Items in your cart: ' + get_items_quantity())
+  update_orders()
 }
 
 function get_items_quantity() {
@@ -42,4 +42,10 @@ function get_orders() {
   }
 
   return orders
+}
+
+function update_orders() {
+  let orders = get_orders()
+
+  $('#orders').val(orders) // jQuery call
 }
