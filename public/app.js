@@ -12,6 +12,7 @@ function add_to_cart(id) {
   localStorage.setItem(key, p)
 
   update_orders()
+  update_orders_button()
 }
 
 function get_items_quantity() {
@@ -46,6 +47,10 @@ function get_orders() {
 
 function update_orders() {
   let orders = get_orders()
-
   $('#orders').val(orders) // jQuery call
+}
+
+function update_orders_button() {
+  let text = 'Cart (' + get_items_quantity() + ')'
+  $('#orders_button').val(text) // jQuery call
 }

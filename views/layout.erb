@@ -72,7 +72,7 @@
           <span class="navbar-text">
             <form action="/cart" method="post">
               <i class="fas fa-shopping-cart"></i>
-              <input type="submit" class="btn btn-secondary btn-sm" value="Cart">
+              <input type="submit" id="orders_button" class="btn btn-secondary btn-sm" value="Cart">
               <input type="hidden" id="orders" name="orders">
             </form>
           </span>
@@ -122,6 +122,7 @@
 
     <script defer>
       update_orders()
+      update_orders_button()
     </script>
   </body>
 </html>
