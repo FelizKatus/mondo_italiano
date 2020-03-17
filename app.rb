@@ -29,6 +29,10 @@ get '/product/:id' do
   erb :product
 end
 
+post '/cart' do
+  erb :cart
+end
+
 get '/about' do
   erb :about
 end

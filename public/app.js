@@ -1,4 +1,8 @@
-// Mondo Italiano App :: JS
+//  Mondo Italiano App JS
+
+/*
+    Shopping Cart
+*/
 
 function add_to_cart(id) {
   let key = 'product_' + id
@@ -23,4 +27,19 @@ function get_items_quantity() {
   }
 
   return quantity
+}
+
+function get_orders() {
+  let orders = ''
+
+  for(let i = 0; i < localStorage.length; i++) {
+    let key = localStorage.key(i)
+    let value = localStorage.getItem(key)
+
+    if(key.indexOf('product_') == 0) {
+      orders = orders + key + "=" + value + ','
+    }
+  }
+
+  return orders
 }
