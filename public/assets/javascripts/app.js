@@ -51,6 +51,6 @@ function update_orders() {
 }
 
 function update_orders_button() {
-  let text = 'Cart (' + get_items_quantity() + ')'
+  let text = 'Cart | ' + get_items_quantity()
   $('#orders_button').val(text) // jQuery call
 }
