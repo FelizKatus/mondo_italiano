@@ -7,7 +7,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => false,
       :is_veg        => false,
       :is_offer      => false,
-      :path_to_image => '/images/hawaiian.jpg',
+      :path_to_image => '/products/hawaiian.jpg',
       :price         => 5
     })
 
@@ -18,7 +18,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => false,
       :is_veg        => false,
       :is_offer      => false,
-      :path_to_image => '/images/hawaiian.jpg',
+      :path_to_image => '/products/hawaiian.jpg',
       :price         => 8
     })
 
@@ -29,7 +29,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => false,
       :is_veg        => false,
       :is_offer      => false,
-      :path_to_image => '/images/hawaiian.jpg',
+      :path_to_image => '/products/hawaiian.jpg',
       :price         => 10
     })
 
@@ -40,7 +40,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => true,
       :is_veg        => false,
       :is_offer      => true,
-      :path_to_image => '/images/pepperoni.jpg',
+      :path_to_image => '/products/pepperoni.jpg',
       :price         => 15
     })
 
@@ -51,7 +51,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => true,
       :is_veg        => false,
       :is_offer      => true,
-      :path_to_image => '/images/pepperoni.jpg',
+      :path_to_image => '/products/pepperoni.jpg',
       :price         => 18
     })
 
@@ -62,7 +62,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => true,
       :is_veg        => false,
       :is_offer      => true,
-      :path_to_image => '/images/pepperoni.jpg',
+      :path_to_image => '/products/pepperoni.jpg',
       :price         => 20
     })
 
@@ -73,7 +73,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => false,
       :is_veg        => true,
       :is_offer      => false,
-      :path_to_image => '/images/veg.jpg',
+      :path_to_image => '/products/veg.jpg',
       :price         => 10
     })
 
@@ -84,7 +84,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => false,
       :is_veg        => true,
       :is_offer      => false,
-      :path_to_image => '/images/veg.jpg',
+      :path_to_image => '/products/veg.jpg',
       :price         => 12
     })
 
@@ -95,7 +95,7 @@ class AddProducts < ActiveRecord::Migration[6.0]
       :is_spicy      => false,
       :is_veg        => true,
       :is_offer      => false,
-      :path_to_image => '/images/veg.jpg',
+      :path_to_image => '/products/veg.jpg',
       :price         => 15
     })
   end
