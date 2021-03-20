@@ -1,26 +1,16 @@
-<div class="row">
-
-  <div class="col-md-8">
-
-    <img src="<%= @product.path_to_image %>" class="img-fluid" alt="Responsive image">
-  
+<div class="row g-0 bg-light position-relative">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="<%= @product.path_to_image %>" class="w-100" alt="Image">
   </div>
-  <div class="col-md-4">
-
-    <h1>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">
       <%= @product.title %>
       <small class="text-muted">ID: <%= @product.id %></small>
-    </h1>
-
+    </h5>
     <p class="lead">
       <%= @product.description %>
     </p>
-    <p class="text-muted">
-      <small>Suspendisse vitae lectus sed augue convallis vestibulum vitae a nisi. Nulla quis elementum
-        justo. Mauris porttitor ut purus sed congue. Phasellus quis convallis ex. Quisque convallis elit at
-        tellus consequat, quis ullamcorper urna blandit. Etiam tempor ante nec efficitur pharetra. Phasellus
-        ac nibh eu libero tincidunt pellentesque. Sed sodales mi ac tristique porttitor.</small>
-    </p>
+    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
     <p>
       <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" <%= @product.is_spicy ? 'checked' : ''%> disabled>
@@ -36,12 +26,9 @@
       </div>
     </p>
     <p class="lead">
-      <span class="badge badge-primary">$<%= @product.price %></span>
+      <span class="badge bg-primary">$<%= @product.price %></span>
     </p>
     <hr>
-    <p>
-      <button type="button" class="btn btn-sm btn-outline-secondary" onClick="add_to_cart(<%= @product.id %>)">Add to Cart</button>
-    </p>
-
+    <button type="button" class="btn btn-sm btn-outline-secondary" onClick="add_to_cart(<%= @product.id %>)">Add to Cart</button>
   </div>
 </div><!-- /row -->
