@@ -1,8 +1,8 @@
-# Mondo Italiano App
+# Mondo Italiano
 
-es una tienda web para pizzeria simple de usar, ligera, rápida y libre que está creado en El Reino de España.
+Es una tienda web para pizzeria simple de usar, ligera, rápida y libre que está creado en El Reino de España.
 
-**Mondo Italiano App** se desarrolla con las siguientes fantasticas tecnologías:
+**Mondo Italiano** se desarrolla con las siguientes fantasticas tecnologías:
 
 * Ruby
 * Sinatra
@@ -24,11 +24,8 @@ Eres libre y tienes derecho de hacer todo lo que quieres =)
 
 #### Pantallas:
 
-Lista de productos ->
-![Lista de productos](screenshots/product_list.png "Lista de productos")
-
-Página del producto ->
-![Página del producto](screenshots/product_page.png "Página del producto")
-
-Formulario de contacto ->
-![Formulario de contacto](screenshots/contact_form.png "Formulario de contacto")
+![Página de inicio](screenshots/index.png "Página de inicio")
+![Página del producto](screenshots/product.png "Página del producto")
+![Carrito de compras](screenshots/cart.png "Carrito de compras")
+![Sobre](screenshots/about.png "Sobre")
+![Contacto](screenshots/contact.png "Contacto")
