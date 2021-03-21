@@ -24,10 +24,6 @@ Es una tienda web para pizzería simple de usar, ligera, rápida y libre que est
 
 *bundle exec ruby app.rb*
 
-## Licensia:
-
-Eres libre y tienes derecho de hacer todo lo que quieres =)
-
 ## Pantallas:
 
 Página de inicio:

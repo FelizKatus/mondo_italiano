@@ -1,8 +1,4 @@
-//  Mondo Italiano App JS
-
-/*
-  Shopping Cart
-*/
+// Shopping Cart
 
 function add_to_cart(id) {
   let key = 'product_' + id
