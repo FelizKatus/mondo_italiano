@@ -19,17 +19,17 @@ end
 
 get '/' do
   @products = Product.all
-
   erb :index
 end
 
 get '/product/:id' do
   @product = Product.find(params[:id])
-
   erb :product
 end
 
 post '/cart' do
+  orders = params[:orders]
+  @orders = parse_orders orders
   erb :cart
 end
 
@@ -76,4 +76,24 @@ post '/contact' do
     })
 
   erb '¡Gracias! Email sido enviado.'
+end
+
+# Helpers
+
+def parse_orders orders
+  s1 = orders.split(/,/)
+
+  arr = []
+
+  s1.each do |i|
+    s2 = i.split(/=/)
+    s3 = s2[0].split(/_/)
+    id = s3[1]
+    quantity = s2[1]
+
+    arr2 = [id, quantity]
+    arr.push arr2
+  end
+
+  return arr
 end
