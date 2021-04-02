@@ -30,6 +30,9 @@ end
 post '/cart' do
   orders = params[:orders]
   @orders = parse_orders orders
+  @orders.each do |order|
+    order[0] = Product.find(order[0])
+  end
   erb :cart
 end
 
@@ -78,7 +81,7 @@ post '/contact' do
   erb '¡Gracias! Email sido enviado.'
 end
 
-# Helpers
+# Helpers ---------------------------------------------------------------------
 
 def parse_orders orders
   s1 = orders.split(/,/)
